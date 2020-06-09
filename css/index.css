@@ -1,0 +1,48 @@
+
+h1
+{
+    text-align: center;
+}
+
+html
+{
+    background-color: rgba(255 254 238) !important;
+}
+
+.expand-horz
+{
+    width: 100%;
+}
+
+.navbar
+{
+    background-color:rgba(255 254 238) !important;
+    font-size: x-large;
+}
+
+.head
+{
+    background-color:rgba(255 254 238) !important;
+}
+.navbar-brand
+{
+    font-size: x-large;
+}
+
+.background-image
+{
+    width: 100%;
+}
+
+.wrapper
+{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:rgba(255 254 238) !important;
+}
+
+body
+{
+    background-color:rgba(255 254 238) !important;
+}
