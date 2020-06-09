@@ -1,3 +1,7 @@
+body
+{
+    background-color:rgba(255 254 238) !important;
+}
 
 h1
 {
@@ -39,10 +43,23 @@ html
     margin-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
-    background-color:rgba(255 254 238) !important;
+    /* background-color:rgba(255 254 238) !important; */
 }
 
-body
+.footer
 {
-    background-color:rgba(255 254 238) !important;
+    background-color: bisque;
+    height: 300px;
+    width: 110%;
+    text-align: center;
+}
+
+.footer-content
+{
+    margin-top: 100px;
+}
+
+.section
+{
+    height: 400px;
 }
