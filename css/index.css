@@ -1,33 +1,33 @@
+/* Navbar stuff */
+
+.dark-color
+{
+    background-color: black;
+    color:white;
+}
+
+.light-color
+{
+    background-color: white;
+    color:black;
+}
+
 body
 {
-    background-color:rgba(255 254 238) !important;
+    /* background-color:rgba(255 254 238) !important; */
 }
 
 h1
 {
     text-align: center;
 }
-
-html
-{
-    background-color: rgba(255 254 238) !important;
-}
-
 .expand-horz
 {
     width: 100%;
 }
 
-.navbar
-{
-    background-color:rgba(255 254 238) !important;
-    font-size: x-large;
-}
 
-.head
-{
-    background-color:rgba(255 254 238) !important;
-}
+
 .navbar-brand
 {
     font-size: x-large;
@@ -48,15 +48,14 @@ html
 
 .footer
 {
-    background-color: bisque;
-    height: 300px;
-    width: 110%;
+    height: 200px;
+    width: 100%;
     text-align: center;
 }
 
 .footer-content
 {
-    margin-top: 100px;
+    margin-top: 35px;
 }
 
 .section

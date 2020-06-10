@@ -9,96 +9,151 @@
 -->
 
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css?v=1.0">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
 
 
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">GW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="expand-horz"></span>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Porfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="videogames.html">Video Games</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="music.html">Music</a>
+                        <a class="dropdown-item" href="photography.html">Photography</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<head>
-    <meta charset="utf-8">
+    <!-- Content -->
+    <body>
+        <script src="js/scripts.js"></script>   
+        <!--
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 text-center dark-color">
+                    <h1 class="text-center p-5">
+                        George Whitfield, Jr.
+                    </h1>
+                    <br>
+                    <div>
+                        <div class="p-5">
+                            <a href="/about">About</a>
+                        </div>
+                        <div class="nav-item dropdown p-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align:center;">
+                                <a class="dropdown-item" href="#">Video Games</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Music</a>
+                                <a class="dropdown-item" href="#">Photography</a>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <a href="/contact">Contact</a>
+                        </div>
+                    </div>
 
-    <title>George Whitfield</title>
-    <meta name="description" content="George Whitfield">
-    <meta name="author" content="George Whitfield">
+                </div>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css?v=1.0">
-
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-
-
-<!-- Navigation bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="">George Whitfield, Jr.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="expand-horz"></div>
-
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href = "">Portfolio</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href = "">Music</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href = "">Art</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href = "">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-
-<!-- Content -->
-<body>
-    <script src="js/scripts.js"></script>
-    <img class="img-fluid background-image" src="images/nice photo.jpg" alt="background image">
-    <div class="container-fluid">
-        <div class="col">
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="images/nice photo.jpg" alt="background image">
+                </div>
+            </div>
+            -->
+        <div class="container">
             <div class="row section">
-            yay
+                <div class="row w-100 mh-100">
+                    <div class="col-sm-6 text-center align-self-center">
+                        <button type="button" class="btn btn-dark btn-lg"><a href="/resume">See Resume</a></button>
+                    </div>
+                    <div class="col text-center align-self-center">
+                        <p>
+                        Hi! I'm George - thank you for checking out my personal website! 
+                        I’m a student at Carnegie Mellon University majoring in Electrical 
+                        and Computer Engineering with a minor in Game Design. I have the 
+                        most experience with game design/programming in Unity, web development, 
+                        and native application development in Python. I’m also conversational in 
+                        Spanish and Japanese!
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="row section">
-            yay
+                <div class="row w-100 mh-100">
+                    <div class="col-sm-6 text-center align-self-center">
+                        <p>
+                        Hi! I'm George - thank you for checking out my personal website! 
+                        I’m a student at Carnegie Mellon University majoring in Electrical 
+                        and Computer Engineering with a minor in Game Design. I have the 
+                        most experience with game design/programming in Unity, web development, 
+                        and native application development in Python. I’m also conversational in 
+                        Spanish and Japanese!
+                        </p>
+                    </div>
+                    <div class="col text-center align-self-center">
+                        <button type="button" class="btn btn-dark btn-lg">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm footer-content align-self-center text-center">
+                Contact <br><br>
+                gwhitfie@andrew.cmu.edu <br><br>
+                gwhitfieldjr@gmail.com <br><br>
+            </div>
+            <div class="col-sm footer-content align-self-center text-center">
+                <a href="/portfolio">Resume</a><br><br>
+                <a href="/music">Video Games</a><br><br>
+                <a href="/art">Photography</a><br><br>
             </div>
         </div>
     </div>
-    <h1>Content</h1>
-</body>
-
-<!-- Footer -->
-
-<div class="footer">
-    <div class="row">
-        <div class="col footer-content">
-            Contact <br><br>
-            gwhitfie@andrew.cmu.edu <br><br>
-            gwhitfieldjr@gmail.com <br><br>
-        </div>
-        <div class="col footer-content">
-            <a href="/portfolio">Portfolio</a><br><br>
-            <a href="/music">Music</a><br><br>
-            <a href="/art">Art</a><br><br>
-        </div>
-        <div class="col footer-content">
-            3
-        </div>
-    </div>
-</div>
 
 </html>
