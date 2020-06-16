@@ -32,7 +32,7 @@
 
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
         <span style="width:100%"></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
                     a student at CMU majoring in ECE with a minor in Game Design. To be 
                     honest, I still don’t know what I want to be when I grow up. As of 
                     right now, I have the most experience with game design/programming in 
-                    Unity, web development, and native application development in Python.
+                    Unity, front end web development, and native application development in Python.
 
                     </p>
                 </div>
@@ -97,17 +97,22 @@
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="row bar-content">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="portfolio-bar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        portfolio
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="container-fluid bar-content">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2><b>i make stuff.</b></h2>
+                </div>
+                <div class="col-sm-2" align="center">
+                    <div class="dropdown vertical-center horizontal-center">
+                        <button class="btn btn-primary-outline" type="button" id="portfolio-bar-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            portfolio
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,18 +122,16 @@
         <div class="container">
             <div class="row w-100 p-5">
                 <hr>
-                <div class="col-sm-6 text-center">
+                <div class="col-sm text-center">
                     <p class="vertical-center">
-                    Hi! I'm George - thank you for checking out my personal website! 
-                    I’m a student at Carnegie Mellon University majoring in Electrical 
-                    and Computer Engineering with a minor in Game Design. I have the 
-                    most experience with game design/programming in Unity, web development, 
-                    and native application development in Python. I’m also conversational in 
-                    Spanish and Japanese!
+                    I do non-technical things too! I enjoy playing jazz piano,
+                     making electronic music, taking photos of 
+                     food, and learning about languages (currently studying Spanish and
+                    Japanese). I also play Starcraft II sometimes :)
                     </p>
                 </div>
-                <div class="col text-center align-self-center">
-                    <button type="button" class="btn btn-dark btn-lg">Learn More</button>
+                <div class="col-sm text-center align-self-center" align="center">
+                    <a href="/about" class="btn btn-info" role="button">Learn More</a>
                 </div>
                 <hr>
             </div>
@@ -136,17 +139,15 @@
     </body>
 
     <!-- Footer -->
-    <div class="container">
+    <div class="container-fluid footer">
         <div class="row">
             <div class="col-sm footer-content align-self-center text-center">
-                Contact <br><br>
-                gwhitfie@andrew.cmu.edu <br><br>
-                gwhitfieldjr@gmail.com <br><br>
+                Feel free to contact me at either of the following emails:   
+                gwhitfie@andrew.cmu.edu.    
+                gwhitfieldjr@gmail.com.
             </div>
-            <div class="col-sm footer-content align-self-center text-center">
-                <a href="/portfolio">Resume</a><br><br>
-                <a href="/music">Video Games</a><br><br>
-                <a href="/art">Photography</a><br><br>
+            <div class="row">
+
             </div>
         </div>
     </div>

@@ -41,13 +41,15 @@ h1
 	right: 0;
 	top: 0;
     z-index: -1;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
 }
 
 .title h1
 {
     position: relative;
     color: white;
-    font-size: 10vmin;
+    font-size: 12vmin;
     overflow: hidden;
     font-family: monospace;
     width: 100%;
@@ -96,15 +98,45 @@ h1
     width: 40vmin;
 }
 
-#portfolio-bar
+#portfolio-bar-btn
 {
-    background-color: rgba(0 0 0 50) !important;
+    background-color: rgba(0, 0, 0, 0.267)  !important;
     color: white;
+    width: 26vmin;
+    min-width: 150px;
+    height: 10vmin;
+    font-size: 4vmin;
+    font-family: monospace;
+    border-radius: 0;
+    border-width: 5px;
+    border-color: white;
 }
 
+.bar-content
+{
+    background-image: url('../images/background-flipped.jpg');
+    width: auto;
+	min-width: 100%;
+	height: auto;
+	right: 0;
+	top: 0;
+    z-index: -1;
+    padding: 5vmin;
+}
 
-
-
+.bar-content h2
+{
+    position: relative;
+    color: white;
+    font-size: 10vmin;
+    overflow: hidden;
+    font-family: monospace;
+    text-align: center;
+    padding-right: 10vmin;
+    padding-left: 10vmin;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
 
 
 
@@ -129,8 +161,10 @@ hr
 
 
 
-
-
+/*  Copied from css tricks website: https://css-tricks.com/centering-css-complete-guide/  */
+.horizontal-center {
+    margin: auto;
+}
 
 
 
@@ -143,12 +177,16 @@ hr
 
 .footer
 {
-    height: 200px;
+    height: 60px;
     width: 100%;
     text-align: center;
+    background-color: rgb(78, 51, 139);
+    color: white;
 }
 
 .footer-content
 {
-    margin-top: 35px;
+    position: relative;
+    top: 1.5vmin;
+    margin: auto;
 }
