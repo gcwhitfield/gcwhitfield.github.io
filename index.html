@@ -18,7 +18,7 @@
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css?v=1.0">
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
 
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,42 +26,44 @@
         <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
 
-
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <span style="width:100%"></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item active">
                     <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown mx-5">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Porfolio
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="videogames.html">Video Games</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="music.html">Music</a>
-                        <a class="dropdown-item" href="photography.html">Photography</a>
-                    </div>
-                </li>
                 <li class="nav-item active mx-5">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="videogames.html">Video Games</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="music.html">Music</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="photography.html">Photography</a>
+                </li>
+                <li class="nav-item mx-5">
                     <a class="nav-link" href="resume.html">Resume</a>
                 </li>
-                <li class="nav-item active mx-5">
+                <li class="nav-item mx-5">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-        <span style="width:100%"></span>
     </nav>
 
     <!-- Content -->
@@ -108,10 +110,10 @@
                             portfolio
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="videogames.html">Video Games</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="music.html">Music</a>
+                            <a class="dropdown-item" href="photography.html">Photography</a>
                         </div>
                     </div>
                 </div>
@@ -142,9 +144,8 @@
     <div class="container-fluid footer">
         <div class="row">
             <div class="col-sm footer-content align-self-center text-center">
-                Feel free to contact me at either of the following emails:   
-                gwhitfie@andrew.cmu.edu.    
-                gwhitfieldjr@gmail.com.
+                <a href="https://twitter.com/gcwhitfie" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/georgewhitfieldjr/" class="fa fa-linkedin"></a>
             </div>
             <div class="row">
 

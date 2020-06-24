@@ -1,0 +1,238 @@
+/* Navbar stuff */
+
+.dark-color
+{
+    background-color: black;
+    color:white;
+}
+
+.light-color
+{
+    background-color: white;
+    color:black;
+}
+
+body
+{
+    /* background-color:rgba(255 254 238) !important; */
+}
+
+h1
+{
+    text-align: center;
+}
+
+.navbar-brand
+{
+    font-size: x-large;
+}
+
+
+
+/* index.html */
+
+/*  Background image with "George Whitfield, Jr."  */
+.title 
+{
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    width: auto;
+	min-width: 100%;
+	height: auto;
+	right: 0;
+	top: 0;
+    z-index: -1;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+}
+
+.title h1
+{
+    position: relative;
+    color: white;
+    font-size: 11vmin;
+    overflow: hidden;
+    font-family: monospace;
+    width: 100%;
+    text-align: center;
+    padding-right: 10vmin;
+    padding-left: 10vmin;
+    padding-top: 10vmin;
+}
+
+
+
+.title p
+{
+    color: white;
+    font-size: 5vmin;
+    overflow: hidden;
+    font-family: monospace;
+    width: 70%;
+    text-align: center;
+    padding-right: 10vmin;
+    padding-left: 10vmin;
+    padding-top: 2vmin;
+    padding-bottom: 10vmin;
+    position: relative;
+    left: 15%;
+}
+
+.image-overlay-text {
+	position: relative;
+	vertical-align: middle;
+	font-size: 18vmin;
+	height:100%;
+	padding-top: 10vmin;
+	padding-bottom: 10vmin;
+	color: white;
+	text-align: center;
+}
+
+.image-overlay-text h1{
+    vertical-align: middle;
+    font-family: monospace;
+	font-size: 18vmin;
+	padding-top: 10vmin;
+	padding-bottom: 10vmin;
+	color: white;
+	text-align: center;
+}
+
+/* use inline CSS to specify the image (background-image: url(<image path>);)*/
+.image-background {
+	width: auto;
+	min-width: 100%;
+	height: 60vmin;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+
+.wrapper
+{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* background-color:rgba(255 254 238) !important; */
+}
+
+.section
+{
+    height: 500px;
+}
+
+
+#headshot
+{
+    border-radius: 50%;
+    width: 40vmin;
+}
+
+#portfolio-bar-btn
+{
+    background-color: rgba(0, 0, 0, 0.267)  !important;
+    color: white;
+    width: 26vmin;
+    min-width: 150px;
+    height: 10vmin;
+    font-size: 4vmin;
+    font-family: monospace;
+    border-radius: 0;
+    border-width: 5px;
+    border-color: white;
+}
+
+/* Ensures that the portfolio images are all the same size */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.bar-content
+{
+    background-image: url('../images/background-flipped.jpg');
+    width: auto;
+	min-width: 100%;
+	height: auto;
+	right: 0;
+	top: 0;
+    z-index: -1;
+    padding: 5vmin;
+    background-attachment: fixed;
+}
+
+.bar-content h2
+{
+    position: relative;
+    color: white;
+    font-size: 10vmin;
+    overflow: hidden;
+    font-family: monospace;
+    text-align: center;
+    padding-right: 10vmin;
+    padding-left: 10vmin;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+}
+
+
+
+.vertical-center
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+hr
+{
+    clear:both;
+    display:block;
+    width: 90%;
+    margin: 5vmin;
+    height: 1vmin;
+    border-top: 1vmin dotted lightgray;
+}
+
+
+
+
+
+/*  Copied from css tricks website: https://css-tricks.com/centering-css-complete-guide/  */
+.horizontal-center {
+    margin: auto;
+}
+
+
+.footer
+{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(78, 51, 139);
+    color: white;
+}
+
+.footer-content
+{
+    position: relative;
+    top: 1.5vmin;
+    margin: auto;
+}
+
+.fa
+{
+    background-color: white;
+    color:rgb(78, 51, 139);
+    border-radius: 50%;
+    padding: 1vmin;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
