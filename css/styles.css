@@ -147,13 +147,17 @@ h1
 }
 
 /* Ensures that the portfolio images are all the same size */
-.card-img-top {
+.portfolio-btn
+{
     width: 100%;
     height: 200px;
     object-fit: cover;
-
+    cursor:pointer;
+    color: white;
+    font-size: 8vmin;
 }
 
+/* "i make stuff" bar styling*/
 .bar-content
 {
     background-image: url('../images/background-flipped.jpg');
@@ -182,7 +186,7 @@ h1
 }
 
 
-
+/* vertically centering texts in containers*/
 .vertical-center
 {
     position: relative;
@@ -190,6 +194,7 @@ h1
     transform: translateY(-50%)
 }
 
+/*  dotted line breaks */
 hr
 {
     clear:both;
@@ -200,7 +205,10 @@ hr
     border-top: 1vmin dotted lightgray;
 }
 
+.portfolio-btn
+{
 
+}
 
 
 
@@ -226,6 +234,7 @@ hr
     margin: auto;
 }
 
+/* icons used for the footer */
 .fa
 {
     background-color: white;
