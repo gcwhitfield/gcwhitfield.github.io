@@ -1,0 +1,190 @@
+<!doctype html>
+
+<!-- 
+    George Whitfield
+    gwhitfie@andrew.cmu.edu
+    June 8 2020
+
+    Personal website
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/styles.css?v=1.0">
+    </head>
+
+    <!-- JQuery code that shows images 
+         Code found on stack overflow. Modified slightly to put images in columns
+         https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery-->
+
+   <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../index.html">About Me</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../videogames.html">Video Games</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../music.html">Music</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="../photography.html">Photography</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../resume.html">Resume</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <body>
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(../images/video-games/beatdown/beatdown-4.png);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center"><b>BEATDOWN</b></h1>
+      </div>
+    </div>
+
+    <!-- The Content -->
+    <div class="container">
+    <hr>
+        <!-- background images of portfolio are 45% darker than original image -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 p-5">
+            <i>Fall 2018 - Game Programming & Design</i>
+            <h1>Overview</h1>
+            BEATDOWN is a videogame that can analyze a music file and generate a level that the player needs to complete while listening to the music. 
+            This is my term project for Fundamentals of Programming 15-112 at Carnegie Mellon. 
+            I wrote all of the game logic and graphics code using PyGame and Python's built-in libraries.
+            The player is a green square that moves around with the computer’s mouse movement, and the enemies are larger squares that fly across the screen with the music.
+            Check out the
+            <a href="https://www.youtube.com/watch?v=6Y65BlN4CPU&feature=youtu.be">video</a>
+            that I made.
+            <br><br>
+
+            <h1>Screenshots</h1>
+            <img src="../images/video-games/beatdown/beatdown-1.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/beatdown/beatdown-2.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/beatdown/beatdown-3.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/beatdown/beatdown-4.png" style="width:100%;">
+            <br><br>
+
+            <h1>Competitive Analysis</h1>
+            I took much inspiration for the concept of BEATDOWN from a
+            video game called Audiosurf. In Audiosurf, the player can 
+            select music files on his/her computer and surf through cool
+            looking levels to the beat of the music. I thought
+            that this is a great idea because the player can take 
+            music that they already enjoy and play a fun level. 
+            <br><br>
+            For my project, I didn't want to analyze the music with the 
+            same complexity as Audiosurf. I just wanted my project to 
+            be able to detect the beat of the music and generate enemies 
+            based on the ‘intensity’ of the music. Instead of the player
+            surfing through a pretty 3d environment, the player will 
+            be a green square that is controlled by the mouse movement.
+            <br><br>
+            BEATDOWN is different from other rhythm games like Dance 
+            Dance Revolution or Osu because there is no way to fail
+            a level. Instead, the player will receive a score at the 
+            end of the song based on how many object he/she successfully
+            dodged. But, no matter how bad that player is at playing the character,
+            the player should be able to continue.
+            <br><br>
+            <h1>Algorithmic Plan</h1>
+            The most difficult part of the project is making the music synched up with the animations displayed by PyGame. Here are the steps I am going to take to synch the music with the animations:
+            <ol>
+                <li>
+                    Analyze the music file for the song
+                    <ol type="a">
+                        <li>
+                            Gather data about the song’s loudness and frequency spectrum for every frame of
+                            animation that we need. In out case, we want the game to run around 60 frames
+                            per second.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Play the music..
+                    <ol type="a">
+                        <li>
+                            To play the music and run the graphics animation at the same time, I have to use Python’s ‘threading’ module.
+                        </li>
+                        <li>
+                            Every 1/60th of a second, my music thread will send information to my animation code.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Synch the music with the animation.
+                    <ol type="a">
+                        <li>
+                            At every animation frame, the game will 
+                            interpret data about the music currently
+                            playing, and spawn enemies accordingly. If 
+                            a section of music is louder than other sections, 
+                            then more enemies will be spawned. Since we 
+                            gathered data about the music file already, 
+                            all we need to do is read a neatly formatted
+                            list with the data we need.
+                        </li>
+                        <li>
+                            If the music is currently ‘on beat’, the enemies will move faster.
+                        </li>
+                    <ol>
+                </li>
+            </div>
+        </div>
+    <hr>
+    </div>
+
+    </body>
+
+   <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-sm footer-content align-self-center text-center">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+</html>
