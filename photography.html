@@ -40,15 +40,17 @@
 
     var folder = "images/photography/";
 
-    $.ajax({
-        url : folder,
-        success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                    $(".images-container").append( "<div class='col-lg-5'><img src='"+ folder + val +"'></div>" );
-                } 
-            });
-        }
+    $(document).ready(function(){
+        $.ajax({
+            url : folder,
+            success: function (data) {
+                $(data).find("a").attr("href", function (i, val) {
+                    if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                        $(".images-container").append( "<div class='col-lg-5'><img src='"+ folder + val +"'></div>" );
+                    } 
+                });
+            }
+        });
     });
     </script>
    <!-- Navigation bar -->
