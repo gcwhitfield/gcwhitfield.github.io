@@ -36,23 +36,7 @@
     <!-- JQuery code that shows images 
          Code found on stack overflow. Modified slightly to put images in columns
          https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery-->
-    <script>
 
-    var folder = "images/photography/";
-
-    $(document).ready(function(){
-        $.ajax({
-            url : folder,
-            success: function (data) {
-                $(data).find("a").attr("href", function (i, val) {
-                    if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                        $(".images-container").append( "<div class='col-lg-5'><img src='"+ folder + val +"'></div>" );
-                    } 
-                });
-            }
-        });
-    });
-    </script>
    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,11 +83,93 @@
     <div class="container">
     <hr>
         <!-- background images of portfolio are 45% darker than original image -->
-        <div class="row images-container">
+        <div class="row justify-content-center">
             <div class="col-lg-6 p-5">
                 <p>
-
+                    I started doing photography as a hobby in my freshman year of 
+                    high school, and I mainly take photos of food and post them 
+                    on my <a href="https://www.instagram.com/georgeeatingfood/">
+                    Instagram page</a>. I've been using my Canon Rebel T5 for almost
+                    5 years now and it still works great! I've invluded some of
+                    my favorite photos below. Enjoy!
                 </p>
+            </div>
+        </div>
+        <div class='row justify-content-center'>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/deer.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/licking-deer.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/bird.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/apple.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/blueberry-cheesecake.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/cupcake.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/fried-chicken.jpeg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/india-street.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/latte.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/limes.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/okonomiyaki.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/pinky.JPG" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/rita-cooking.jpg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/strawberries.jpeg" alt="Card image">
+                </div>
+            </div>
+            <div class="col-lg-10 p-5">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/photography/taco.jpg" alt="Card image">
+                </div>
             </div>
         </div>
     <hr>
