@@ -146,7 +146,7 @@ h1
 {
     background-color: rgba(0, 0, 0, 0.267)  !important;
     color: white;
-    width: 26vmin;
+    width: 40vmin;
     min-width: 150px;
     height: 10vmin;
     font-size: 4vmin;
@@ -167,6 +167,21 @@ h1
     cursor:pointer;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5vmin;
+}
+
+
+/* Discover dropdown on index.html */
+.index-content-btn
+{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    cursor:pointer;
+    color: white;
+    background-image: url(../images/background.jpg);
+    background-size: 80vmin;
+    font-family: monospace;
     font-size: 5vmin;
 }
 
@@ -217,12 +232,6 @@ hr
     height: 1vmin;
     border-top: 1vmin dotted lightgray;
 }
-
-.portfolio-btn
-{
-
-}
-
 
 
 /*  Copied from css tricks website: https://css-tricks.com/centering-css-complete-guide/  */

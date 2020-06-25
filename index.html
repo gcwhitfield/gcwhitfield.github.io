@@ -47,7 +47,7 @@
                     <a class="nav-link" href="index.html">About Me</a>
                 </li>
                 <li class="nav-item mx-5">
-                    <a class="nav-link" href="videogames.html">Video Games</a>
+                    <a class="nav-link" href="games.html">Games</a>
                 </li>
                 <li class="nav-item mx-5">
                     <a class="nav-link" href="music.html">Music</a>
@@ -87,11 +87,12 @@
                 <div class="col text-center">
                     <p class="vertical-center">
                     Hi! I'm George - thank you for checking out my personal website! I’m 
-                    a student at CMU majoring in ECE with a minor in Game Design. To be 
-                    honest, I still don’t know what I want to be when I grow up. As of 
-                    right now, I have the most experience with game design/programming in 
-                    Unity, front end web development, and native application development in Python.
-
+                    a student at CMU majoring in ECE with a minor in Game Design. Right now, I have 
+                    the most experience with game design/programming in 
+                    Unity, front end web development, and native application development in Python. 
+                    I'm interested in exploring a wide array of fields including 
+                    video gameplay development, sound synthesis, full stack 
+                    development, and app devlopment.
                     </p>
                 </div>
                 <hr>
@@ -100,21 +101,15 @@
 
         <div class="container-fluid bar-content">
             <div class="row">
-                <div class="col-sm-9">
+                <div class="col-lg-6">
                     <h2><b>i make stuff.</b></h2>
                 </div>
-                <div class="col-sm-2" align="center">
-                    <div class="dropdown vertical-center horizontal-center">
-                        <button class="btn btn-primary-outline" type="button" id="portfolio-bar-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            portfolio
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="videogames.html">Video Games</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="music.html">Music</a>
-                            <a class="dropdown-item" href="photography.html">Photography</a>
-                        </div>
-                    </div>
+                <div class="col-lg-6" align="center">
+                    <form class="vertical-center" action="games.html">
+                    <button id="portfolio-bar-btn">
+                        game portfolio
+                    </button>
+                </form>
                 </div>
             </div>
         </div>
@@ -123,16 +118,24 @@
         <div class="container">
             <div class="row w-100 p-5">
                 <hr>
-                <div class="col-sm text-center">
+                <div class="col-lg text-center p-2">
                     <p class="vertical-center">
                     I do non-technical things too! I enjoy playing jazz piano,
-                     making electronic music, taking photos of 
-                     food, and learning about languages (currently studying Spanish and
+                    making electronic music, taking photos of 
+                    food, and learning about languages (currently studying Spanish and
                     Japanese). I also play Starcraft II sometimes :)
                     </p>
                 </div>
-                <div class="col-sm text-center align-self-center" align="center">
-                    <a href="/about" class="btn btn-info" role="button">Learn More</a>
+                <div class="col-lg text-center align-self-center p-2" align="center">
+                    <div class="dropdown horizontal-center">
+                        <button class="btn btn-primary-outline index-content-btn" type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                            discover
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="music.html">Music</a>
+                            <a class="dropdown-item" href="photography.html">Photography</a>
+                        </div>
+                    </div>
                 </div>
                 <hr>
             </div>
@@ -145,9 +148,6 @@
             <div class="col-sm footer-content align-self-center text-center">
                 <a href="https://twitter.com/gcwhitfie" class="fa fa-twitter"></a>
                 <a href="https://www.linkedin.com/in/georgewhitfieldjr/" class="fa fa-linkedin"></a>
-            </div>
-            <div class="row">
-
             </div>
         </div>
     </div>
