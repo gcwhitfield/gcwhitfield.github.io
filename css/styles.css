@@ -36,8 +36,8 @@ h1
 {
     background-image: url('../images/background.jpg');
     background-attachment: scroll;
+    background-size: cover;
     width: auto;
-	min-width: 100%;
 	height: auto;
 	right: 0;
 	top: 0;
@@ -177,12 +177,17 @@ h1
     height: auto;
     object-fit: cover;
     cursor:pointer;
-    color: white;
-    background-image: url(../images/background.jpg);
+    color: rgb(78, 51, 139);
     background-size: 80vmin;
     font-family: monospace;
     font-size: 5vmin;
     border-radius: 0%;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.index-content-btn:hover{
+    text-decoration: underline;
 }
 
 /* "i make stuff" bar styling*/
@@ -211,6 +216,12 @@ h1
     padding-left: 10vmin;
     padding-top: 5vmin;
     padding-bottom: 5vmin;
+}
+
+
+.bar-content a
+{
+    color:rgb(78, 51, 139);
 }
 
 
