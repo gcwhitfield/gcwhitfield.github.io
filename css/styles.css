@@ -174,7 +174,7 @@ h1
 /* Discover dropdown on index.html */
 .index-content-btn
 {
-    width: 60%;
+    width: auto;
     height: auto;
     object-fit: cover;
     cursor:pointer;
@@ -183,6 +183,7 @@ h1
     background-size: 80vmin;
     font-family: monospace;
     font-size: 5vmin;
+    border-radius: 0%;
 }
 
 /* "i make stuff" bar styling*/
@@ -203,7 +204,7 @@ h1
 {
     position: relative;
     color: white;
-    font-size: 10vmin;
+    font-size: 8vmin;
     overflow: hidden;
     font-family: monospace;
     text-align: center;
