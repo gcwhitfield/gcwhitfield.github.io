@@ -1,0 +1,151 @@
+<!doctype html>
+
+<!-- 
+    George Whitfield
+    gwhitfie@andrew.cmu.edu
+    June 8 2020
+
+    Personal website
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/styles.css?v=1.0">
+    </head>
+
+    <!-- JQuery code that shows images 
+         Code found on stack overflow. Modified slightly to put images in columns
+         https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery-->
+
+   <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../index.html">About Me</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="../videogames.html">Video Games</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../music.html">Music</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../photography.html">Photography</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../resume.html">Resume</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <body>
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(../images/video-games/slope-crusher/slope-crusher-thumbnail-2.png);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center"><b>Slope Crusher</b></h1>
+      </div>
+    </div>
+
+    <!-- The Content -->
+    <div class="container">
+    <hr>
+        <!-- background images of portfolio are 45% darker than original image -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 p-5">
+                <i>Spring 2020 - Shader & Gameplay Progamming (Unreal)</i>
+                <br><br>
+                <h1>Overview</h1>
+                Slope Crusher is an intense racing game about boarding through 
+                a noise-filled world. Jump, Smash and Flip at insane speeds to
+                get the best time possible.
+                <br><br>
+                This is the fourth project I did
+                with the Game Creation Society. I met with other students once a
+                week for half of the semester, and then transitioned to 
+                virtual calls via Discord once the pandemic started.                
+                <br><br>
+                This was the first project I've ever worked on using Unreal Engine 4.
+                I created the emissive noise shaders and destruction blueprint for the destructible 
+                objects in the scene. I also creaeted a ferrofluid-esque water shader,
+                and configured the audio groups for the options screen.
+                There was a pretty big learning curve at the start since I didn't
+                know how to use Unreal's blueprint system. I watched tons of 
+                online tutorials and ended up with some pretty cool visuals!
+                Check out 
+                <a href="https://eaglee.itch.io/slope-crusher">
+                Slope Crusher's page on itch.io
+                </a>
+                to download the game for Windows/MacOS.
+                <br><br>
+                Here are a couple screenshots of the shaders we ended up using:
+                <br><br>
+
+                <img src="../images/video-games/slope-crusher/slope-crusher-5.png" style="width:100%;">
+    
+                <br><br>
+                <img src="../images/video-games/slope-crusher/slope-crusher-6.png" style="width:100%;">
+                <br><br>
+
+
+                <h1>Gameplay Screenshots</h1>
+                <img src="../images/video-games/slope-crusher/slope-crusher-1.png" style="width:100%;">
+                <br><br>
+                <img src="../images/video-games/slope-crusher/slope-crusher-2.png" style="width:100%;">
+                <br><br>
+                <img src="../images/video-games/slope-crusher/slope-crusher-3.png" style="width:100%;">
+                <br><br>
+                <img src="../images/video-games/slope-crusher/slope-crusher-4.gif" style="width:100%;">
+                <br><br>
+                <br><br>
+
+            </div>
+        </div>
+    <hr>
+    </div>
+
+    </body>
+
+   <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-sm footer-content align-self-center text-center">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+</html>
