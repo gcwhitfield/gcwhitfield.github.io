@@ -253,7 +253,7 @@ hr
 
 .footer
 {
-    height: 60px;
+    height: auto;
     width: 100%;
     text-align: center;
     background-color: rgb(78, 51, 139);
@@ -263,7 +263,6 @@ hr
 .footer-content
 {
     position: relative;
-    top: 1.5vmin;
     margin: auto;
 }
 
@@ -276,5 +275,6 @@ hr
     padding: 1vmin;
     margin-left: 20px;
     margin-right: 20px;
-
+    width: auto;
+    height: auto;
 }
