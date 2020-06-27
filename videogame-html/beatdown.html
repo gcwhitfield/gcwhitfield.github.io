@@ -125,28 +125,28 @@
             BEATDOWN is different from other rhythm games like Dance 
             Dance Revolution or Osu because there is no way to fail
             a level. Instead, the player will receive a score at the 
-            end of the song based on how many object he/she successfully
-            dodged. But, no matter how bad that player is at playing the character,
+            end of the song based on how many objects they successfully
+            dodge. But, no matter how bad that player is at playing the character,
             the player should be able to continue.
             <br><br>
             <h1>Algorithmic Plan</h1>
-            The most difficult part of the project is making the music synched up with the animations displayed by PyGame. Here are the steps I am going to take to synch the music with the animations:
+            The most difficult part of the project was making the music synch up with the animations displayed by PyGame. Here are the steps I am going to take to synch the music with the animations:
             <ol>
                 <li>
                     Analyze the music file for the song
                     <ol type="a">
                         <li>
                             Gather data about the song’s loudness and frequency spectrum for every frame of
-                            animation that we need. In out case, we want the game to run around 60 frames
+                            animation that we need. I want the game to run around 60 frames
                             per second.
                         </li>
                     </ol>
                 </li>
                 <li>
-                    Play the music..
+                    Play the music
                     <ol type="a">
                         <li>
-                            To play the music and run the graphics animation at the same time, I have to use Python’s ‘threading’ module.
+                            To play the music and run the graphics animation at the same time, I have to use Python’s threading module.
                         </li>
                         <li>
                             Every 1/60th of a second, my music thread will send information to my animation code.
@@ -167,7 +167,7 @@
                             list with the data we need.
                         </li>
                         <li>
-                            If the music is currently ‘on beat’, the enemies will move faster.
+                            If the music is currently on beat, the enemies will move faster.
                         </li>
                     <ol>
                 </li>
