@@ -1,0 +1,207 @@
+<!doctype html>
+
+<!-- 
+    George Whitfield
+    gwhitfie@andrew.cmu.edu
+    June 8 2020
+
+    Personal website
+-->
+
+<html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+    </head>
+
+
+   <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="games.html">Games</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="music.html">Music</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="photography.html">Photography</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <body>
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(images/background.jpg);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center"><b>Resume</b></h1>
+      </div>
+    </div>
+
+    <!-- The Content -->
+    <div class="container">
+
+    <hr>
+        <!-- Resume download button.
+        Resume needs to be stored as "Resume-George-Whitfield-Jr.pdf inside of
+        images folder. -->
+        <div class="row justify-content-center">
+            <a href="images/Resume-George-Whitfield-Jr.pdf" download class="text-center">
+            Download Resume
+            </a>
+        </div>
+        <!-- background images of portfolio are 45% darker than original image -->
+        <div class="row justify-content-center p-5">
+            <div class="col-lg-6">
+                <h1 class="text-left">Education</h1>
+                <div class="ml-5">
+                    <b>Carnegie Mellon University</b> | <i>2018 - 2022</i>
+                    <p>Sophomore in Electrical and Computer Engineering, 
+                    Game Design Minor. Clubs: Game Creation Society, Origami 
+                    Club, Jazz Club</p>
+                </div>
+                <div class="ml-5">
+                    <b>Woburn Memorial High School</b> | <i>2014 - 2018</i>
+                    <p>Clubs: Marching Band, Concert Band, Winter Percussion Team</p>
+                </div>
+
+                <h1 class="text-left">Work History</h1>
+                <div class="ml-5">
+                    <b>Summer Undergraduate Research Apprenticeship (SURA)
+                        Cognitive Development Lab, Carnegie Mellon University
+                        Advisors: Dr. Erik Thiessen, Cassondra Eng</b> | <i>Summer 2020</i>
+                    <p>Developed web-based app for education technology experiments 
+                    with children. Deployed Unity project to web for remote data 
+                    collection. Rebuilt personal website for lab supervisor with
+                     HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="ml-5">
+                    <b>E Ink Corporation - Intern</b> | <i>Summer 2019</i>
+                    <p>Developed an image processing application in Python using
+                     PyQt and QtDesigner. I programmed python libraries for 
+                     interacting with a robotic arm, a camera, and an Arduino
+                     via the image app.</p>
+                </div>
+                <div class="ml-5">
+                    <b>MIT Bioinstrumentation Lab - Intern</b> | <i>Summer 2017</i>
+                    <p>Developed unit tests and front-end code in JavaScript
+                     for MICA, an educational project involving sensors used 
+                     in classrooms.</p>
+                </div>
+
+                <h1 class="text-left">Relevant Course Work</h1>
+                <div class="ml-5">
+                    <b>Introduction to Computer Systems 18-213</b> | <i>Spring 2020</i>
+                    <p>Taught in C, this course is designed for students 
+                        to become more effective programmers regarding performance 
+                        and code portability. Topics covered: machine-level code, 
+                        performance evaluation and optimization, computer arithmetic,
+                        memory organization and management, networking technology 
+                        and protocols, and supporting concurrent computation.</p>
+                </div>
+                <div class="ml-5">
+                    <b>Mathematical Foundations of EE 18-202</b> | <i>Spring 2020</i>
+                    <p>Electrical engineering math course. Topics covered: Complex Analysis, Vector and Matrix
+                     Calculus, Linear Algebra, Vector Spaces, Linear 
+                     Independence, Scalar Products, Eigenvalues and 
+                     Eigenvectors, Linear Transforms, Differential Equations.</p>
+                </div>
+
+
+                <h1 class="text-left">Skills</h1>
+                <div class="ml-5">
+                    <b>Programming</b>
+                    <p>Python, C, C#, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="ml-5">
+                    <b>Software</b>
+                    <p>Git, Unity, Blender</p>
+                </div>
+                <div class="ml-5">
+                    <b>Languages</b>
+                    <p>English [native], Spanish [advanced], Japanese [advanced]</p>
+                </div>
+
+                <h1 class="text-left">Projects</h1>
+                <div class="ml-5">
+                    <b>“Slender” Remake – Horror Video Game</b> | <i>Summer 2019</i>
+                    <p>During the summer of 2019 I remade the horror video game 
+                        Slender using Unity. I programmed the game logic, audio 
+                        management and a user interface. I worked on the game 
+                        full-time for three weeks, and then a few tweaks were 
+                        added later. I also wrote the music.</p>
+                </div>
+                <div class="ml-5">
+                    <b>BEATDOWN – Python-based Music Video Game</b> | <i>Fall 2018</i>
+                    <p>For my final project in 15-112 Fundamentals of Programming, 
+                    I created <a href="videogame-html/beatdown.html">BEATDOWN</a>, which is a game that generates 
+                    beat and frequency dependent obstacles that the player 
+                    must dodge. I taught myself about Fourier transforms 
+                    and wrote my own audio signal processing library without 
+                    using an FFT library within the three-week duration of the 
+                    project assignment.</p>
+                </div>
+                <div class="ml-5">
+                    <b>Game Bytes – Game Creation Society Video Game</b> | <i>Fall 2019</i>
+                    <p>I met with other CMU students each week and wrote game logic 
+                        code for Game Bytes, which is a game cabinet video game 
+                        where players compete in a series of minigames. Created
+                        with Unity</p>
+                </div>
+            </div>
+        </div>
+    <hr>
+    </div>
+
+    </body>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row p-2">
+            <div class="col-sm footer-content text-center">
+                <a href="https://twitter.com/gcwhitfie" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/georgewhitfieldjr/" class="fa fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+
+</html>
