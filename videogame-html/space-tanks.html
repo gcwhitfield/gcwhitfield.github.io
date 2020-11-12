@@ -1,0 +1,157 @@
+<!doctype html>
+
+<!-- 
+    George Whitfield
+    gwhitfie@andrew.cmu.edu
+    November 11 2020
+
+    Personal website
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/styles.css?v=1.0">
+    </head>
+
+    <!-- JQuery code that shows images 
+         Code found on stack overflow. Modified slightly to put images in columns
+         https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery-->
+
+   <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../index.html">About Me</a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="../games.html">Games</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../music.html">Music</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../photography.html">Photography</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <body>
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(../images/video-games/space-tanks/space-tanks-banner.jpg);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center"><b>Space Tanks</b></h1>
+      </div>
+    </div>
+
+    <!-- The Content -->
+    <div class="container">
+    <hr>
+        <!-- background images of portfolio are 45% darker than original image -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 p-5">
+                <i>Summer 2020 - Programming (Unity), Music & Sound Effects</i>
+                <br><br>
+                <h1>Overview</h1>
+                Space Tanks is a two player turn-based game where players
+                shoot each other as tanks on the moon. I created this within 48 hours
+                and submitted it to<a href="https://itch.io/jam/united-game-jam-2020">
+                United Game Jam 2020</a>.
+                <br><br>
+                The theme of the jam was "Two", and I decided to incorporate it by 
+                making the game two player. Since it was my first game jam, I wanted
+                to keep it simple. Each turn, players have two options: move or shoot.
+                The background is a low-poly moon landscape created with Unity's 
+                terrain package and the user interface (UI) was created with Unity default UI assets.
+                <br><br>
+                A lot of my time working on Space Tanks was spent debugging in <a href="https://github.com/gcwhitfield/Space-Tanks/blob/master/Assets/Scripts/Tank.cs">
+                Tank.cs</a> and creating the moon terrain. If I were to do this 
+                again, I would spend much less time creating the level environment and more 
+                time playtesting. As the jam deadline came closer, I found myself 
+                rushing more and more, leaving little time for playtesting. 
+                As a result, the aiming feel pretty clunky. 
+                That being said, I am still very 
+                happy with what I was able to do in such a short time.
+                <br><br>
+                Also, I discovered that Unity will not always do what I expect
+                 in build vs in editor. I spent a long time debugging 
+                an issue where projectile collisions only ran in 
+                the Unity editor but not in the build, which caused the game 
+                to be un-playable. As it turns out,  
+                gameObject.isStatic might not always return the right thing inside 
+                of OnTriggerEnter!
+                <br><br>
+
+                Feel free to check out Space Tanks on 
+                <a href="https://poshon.itch.io/space-tanks">itch.io</a>!
+
+                <br><br>
+
+                <h1>Screenshots</h1>
+                <img src="../images/video-games/space-tanks/space-tanks-1.jpg" style="width:100%;">
+                <br><br>
+                <img src="../images/video-games/space-tanks/space-tanks-2.jpg" style="width:100%;">
+                <br><br>
+                <img src="../images/video-games/space-tanks/space-tanks-3.jpg" style="width:100%;">
+                <br><br>
+                <br><br>
+
+                <h1 class="text-left">Title Screen - A New World</h1>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/848727709&color=%2384ecdc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/poshonmusic" title="Poshon" target="_blank" style="color: #cccccc; text-decoration: none;">Poshon</a> · <a href="https://soundcloud.com/poshonmusic/a-new-world" title="A New World" target="_blank" style="color: #cccccc; text-decoration: none;">A New World</a></div>
+                
+                <h1 class="text-left">Level Background - Eternal Calm</h1>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/848727703&color=%2384ecdc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/poshonmusic" title="Poshon" target="_blank" style="color: #cccccc; text-decoration: none;">Poshon</a> · <a href="https://soundcloud.com/poshonmusic/eternal-calm" title="Eternal Calm" target="_blank" style="color: #cccccc; text-decoration: none;">Eternal Calm</a></div>
+            </div>
+        </div>
+    <hr>
+    </div>
+
+    </body>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row p-2">
+            <div class="col-sm footer-content text-center">
+                <a href="https://twitter.com/gcwhitfie" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/georgewhitfieldjr/" class="fa fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+
+</html>
