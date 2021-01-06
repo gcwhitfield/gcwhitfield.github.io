@@ -81,9 +81,9 @@
     <body>
 
     <!-- The Header -->
-    <div class="image-background" style="background-image:url(../images/video-games/slope-crusher/slope-crusher-thumbnail-2.png);">
+    <div class="image-background" style="background-image:url(../images/video-games/static/static-thumbnail.jpg);">
       <div class="image-overlay-text">
-        <h1 class="vertical-center"><b>Slope Crusher</b></h1>
+        <h1 class="vertical-center"><b>Static</b></h1>
       </div>
     </div>
 
@@ -93,50 +93,58 @@
         <!-- background images of portfolio are 45% darker than original image -->
         <div class="row justify-content-center">
             <div class="col-lg-10 p-5">
-                <i>Spring 2020 - Shader & Gameplay Programming (Unreal)</i>
+                <i>Fall 2020 - Gameplay Programming (Unity)</i>
                 <br><br>
                 <h1>Overview</h1>
-                Slope Crusher is an intense racing game about boarding through 
-                a noise-filled world. Jump, Smash and Flip at insane speeds to
-                get the best time possible.
+                Static is a single player first-person horror game where the main 
+                character, a television store janitor, unplugs televisions 
+                as a part of a memory game.
                 <br><br>
-                This is the fourth project I did
-                with the Game Creation Society. I met with other students once a
-                week for half of the semester, and then transitioned to 
-                virtual calls via Discord once the pandemic started.                
+                The game has two phases. In phase 1, the player must 
+                walk throughout the store while memorizing which TVs are 
+                turned on. In phase 2, the store becomes dark and the 
+                player must unplug ONLY the TVs that were on during phase 1. During
+                phase 2, a few TVs that were once off have now mysteriously turned 
+                themselves on... 
                 <br><br>
-                This was the first project I've ever worked on using Unreal Engine 4.
-                I created the emissive noise shaders and destruction blueprint for the destructible 
-                objects in the scene. I also creaeted a ferrofluid-esque water shader,
-                and configured the audio groups for the options screen.
-                There was a pretty big learning curve at the start since I didn't
-                know how to use Unreal's blueprint system. I watched tons of 
-                online tutorials and ended up with some pretty cool visuals!
-                Check out 
-                <a href="https://eaglee.itch.io/slope-crusher">
-                Slope Crusher's page on itch.io
+                I did the programming for monster state management and player movement.
+                I also created the pause screen, intro, and death user interfaces.
+                Please check out 
+                <a href="https://github.com/epiccrash/Halloween-Jam-2020/blob/main/Assets/Scripts/Monster.cs" target="_blank">
+                Monster.cs
                 </a>
+                for a code sample.
+                <br><br>
+                The monster roams the store while playing creepy TV static noises.
+                The monster has 3 states: ROAM, PURSUE, and STARE.
+                If both the monster and player see each other, the monster will scream and 
+                run towards the player. If the monster sees the player but the player 
+                does not see the monster, the monster will stare at the player.
+                If neither the player nor the monster 
+                see each other, the monster will roam throughout the store.
+                <br><br>
+                I worked on a team with 3 other CMU students. We created this game 
+                within one week for the 
+                <a href="https://itch.io/jam/bit-bridge-halloween-jam-2020" target="_blank">
+                Bit Bridge Halloween Jam.
+                </a>
+                <br><br>
+                Check out 
+                <a href="https://www.gamecreation.org/games/static" target="_blank">
+                Static's page on the GCS website</a>
                 to download the game for Windows/MacOS.
                 <br><br>
-                Here are a couple screenshots of the shaders we ended up using:
+ 
+                <h1>Screenshots</h1>
+                <img src="../images/video-games/static/static-1.jpg" style="width:100%;">
                 <br><br>
-
-                <img src="../images/video-games/slope-crusher/slope-crusher-5.png" style="width:100%;">
-    
+                <img src="../images/video-games/static/static-2.jpg" style="width:100%;">
                 <br><br>
-                <img src="../images/video-games/slope-crusher/slope-crusher-6.png" style="width:100%;">
+                <img src="../images/video-games/static/static-3.jpg" style="width:100%;">
                 <br><br>
-
-
-                <h1>Gameplay Screenshots</h1>
-                <img src="../images/video-games/slope-crusher/slope-crusher-1.png" style="width:100%;">
+                <img src="../images/video-games/static/static-5.jpg" style="width:100%;">
                 <br><br>
-                <img src="../images/video-games/slope-crusher/slope-crusher-2.png" style="width:100%;">
-                <br><br>
-                <img src="../images/video-games/slope-crusher/slope-crusher-3.png" style="width:100%;">
-                <br><br>
-                <img src="../images/video-games/slope-crusher/slope-crusher-4.gif" style="width:100%;">
-                <br><br>
+                <img src="../images/video-games/static/static-4.jpg" style="width:100%;">
                 <br><br>
 
             </div>
