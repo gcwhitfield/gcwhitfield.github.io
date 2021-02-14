@@ -52,7 +52,7 @@ h1
     color: white;
     font-size: 11vmin;
     overflow: hidden;
-    font-family: monospace;
+    font-family: sans-serif;
     width: 100%;
     text-align: center;
     padding-right: 10vmin;
@@ -67,7 +67,7 @@ h1
     color: white;
     font-size: 5vmin;
     overflow: hidden;
-    font-family: monospace;
+    font-family: sans-serif;
     width: 70%;
     text-align: center;
     padding-right: 10vmin;
@@ -96,7 +96,7 @@ h1
 
 .image-overlay-text h1{
     vertical-align: middle;
-    font-family: monospace;
+    font-family: sans-serif;
 	font-size: 13vmin;
 	padding-top: 10vmin;
 	padding-bottom: 10vmin;
@@ -149,7 +149,7 @@ h1
     width: auto;
     height: 10vmin;
     font-size: 4vmin;
-    font-family: monospace;
+    font-family: sans-serif;
     border-radius: 0;
     border-width: 5px;
     border-color: white;
@@ -179,7 +179,7 @@ h1
     cursor:pointer;
     color: rgb(78, 51, 139);
     background-size: 80vmin;
-    font-family: monospace;
+    font-family: sans-serif;
     font-size: 5vmin;
     border-radius: 0%;
     border-width: 0;
@@ -210,7 +210,7 @@ h1
     color: white;
     font-size: 8vmin;
     overflow: hidden;
-    font-family: monospace;
+    font-family: sans-serif;
     text-align: center;
     padding-right: 10vmin;
     padding-left: 10vmin;
