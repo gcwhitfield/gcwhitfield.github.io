@@ -88,9 +88,9 @@
     <body>
 
     <!-- The Header -->
-    <div class="image-background" style="background-image:url(../images/video-games/beatdown/beatdown-4.png);">
+    <div class="image-background" style="background-image:url(../images/video-games/lab8/Level1-2.png);">
       <div class="image-overlay-text">
-        <h1 class="vertical-center"><b>BEATDOWN</b></h1>
+        <h1 class="vertical-center"><b>Escape From Lab 8</b></h1>
       </div>
     </div>
 
@@ -100,92 +100,90 @@
         <!-- background images of portfolio are 45% darker than original image -->
         <div class="row justify-content-center">
             <div class="col-lg-10 p-5">
-            <i>Fall 2018 - Game Programming & Design (PyGame)</i>
+            <i>Spring 2021 - Game Programming (Unity)</i>
             <br><br>
             <h1>Overview</h1>
-            BEATDOWN is a videogame that can analyze a music file and generate a level that the player needs to complete while listening to the music. 
-            This is my term project for Fundamentals of Programming 15-112 at Carnegie Mellon. 
-            I wrote all of the game logic and graphics code using PyGame and Python's built-in libraries.
-            The player is a green square that moves around with the computer’s mouse movement, and the enemies are larger squares that fly across the screen with the music.
-            Check out the
-            <a href="https://www.youtube.com/watch?v=6Y65BlN4CPU&feature=youtu.be">video</a>
-            that I made.
+            This is my 6th project with <a href="http://www.gamecreation.org">Game Creation Society</a>
+            (GCS) at CMU.
             <br><br>
 
-            <h1>Screenshots</h1>
-            <img src="../images/video-games/beatdown/beatdown-1.png" style="width:100%;">
+            <a href="https://www.gamecreation.org/games/escape_from_lab_8">Escape From Lab 8</a> is a roguelike dungeon crawler, where you play as 
+            a unnamed test subject who must complete a deadly challenge to keep their life.
             <br><br>
-            <img src="../images/video-games/beatdown/beatdown-2.png" style="width:100%;">
+            The player's movement is confined to a grid and the plyer must collect 
+            items, defeat monsters, and navigate through a procedurally generated 
+            environment to make it to the end of each level. There are a total of 3
+            levels, and each level has a different theme.
             <br><br>
-            <img src="../images/video-games/beatdown/beatdown-3.png" style="width:100%;">
+            <h1>My Role</h1>
+            My role in this project was creating interesting environments for each 
+            of the 3 levels. I programmed <b>procedural room generation</b> for 2 of the levels 
+            and integrated it into the existing room placement pipeline. I also programmed a 
+            tool that reads level assets (encoded as PNG) and imports the level
+            game.
             <br><br>
-            <img src="../images/video-games/beatdown/beatdown-4.png" style="width:100%;">
+            At the beginning of the semester, our project lead had already 
+            created some starter code for placing rooms and connecting them together. 
+            It was a great start! However, all of the rooms were rectangular and 
+            they were all roughly the same size. I started by
+            extending the existing room creation framework to allow for more 
+            complicated and interesting environments, which I used extensively in 
+            Level 1.
             <br><br>
+             
+            <h3> Level 1 </h3>
+            I added circular rooms, rectangular 
+            rooms, and annulus (2D donut) rooms. The 
+            width and height of the rooms are randomly generated between 2 
+            constants, which is specified inside of the Unity Editor. 
+            
+            <br><br>
+            <img src="../images/video-games/lab8/Level1-1.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lab8/Level1-2.png" style="width:100%;">
 
-            <h1>Competitive Analysis</h1>
-            I took much inspiration for the concept of BEATDOWN from a
-            video game called Audiosurf. In Audiosurf, the player can 
-            select music files on his/her computer and surf through cool
-            looking levels to the beat of the music. I thought
-            that this is a great idea because it leverages the 
-            music that they already enjoy.
+
             <br><br>
-            For my project, I didn't want to analyze the music with the 
-            same complexity as Audiosurf. I just wanted my project to 
-            be able to detect the beat of the music and generate enemies 
-            based on the ‘intensity’ of the music. Instead of the player
-            surfing through a pretty 3d environment, the player will 
-            be a green square that is controlled by the mouse movement.
+            <h3> Level 2 </h3>
+            Instead of many different rooms, this level is one giant cave room. 
+            I used the <b>cellular automata</b> approach for generating the room. 
+            The environment is modelled as a 2D array of ones and zeros. A 0 means 
+            that the tile is a wall and the player cannot cross through, and a 1 
+            means that the tile is open and the player can walk through. 
+            The grid is initially populated randomly with 0's and 1's and then
+            the grid gets updated according to a special set of rules (explained below). 
             <br><br>
-            BEATDOWN is different from other rhythm games like Dance 
-            Dance Revolution or Osu because there is no way to fail
-            a level. Instead, the player will receive a score at the 
-            end of the song based on how many objects they successfully
-            dodge. But, no matter how bad that player is at playing the character,
-            the player should be able to continue.
+            Here's a short summary of the steps for generating the cave room via cellular 
+            automata:
             <br><br>
-            <h1>Algorithmic Plan</h1>
-            The most difficult part of the project was making the music synch up with the animations displayed by PyGame. Here are the steps I am going to take to synch the music with the animations:
             <ol>
-                <li>
-                    Analyze the music file for the song
-                    <ol type="a">
-                        <li>
-                            Gather data about the song’s loudness and frequency spectrum for every frame of
-                            animation that we need. I want the game to run around 60 frames
-                            per second.
-                        </li>
-                    </ol>
-                </li>
-                <li>
-                    Play the music
-                    <ol type="a">
-                        <li>
-                            To play the music and run the graphics animation at the same time, I have to use Python’s threading module.
-                        </li>
-                        <li>
-                            Every 1/60th of a second, my music thread will send information to my animation code.
-                        </li>
-                    </ol>
-                </li>
-                <li>
-                    Synch the music with the animation.
-                    <ol type="a">
-                        <li>
-                            At every animation frame, the game will 
-                            interpret data about the music currently
-                            playing, and spawn enemies accordingly. If 
-                            a section of music is louder than other sections, 
-                            then more enemies will be spawned. Since we 
-                            gathered data about the music file already, 
-                            all we need to do is read a neatly formatted
-                            list with the data we need.
-                        </li>
-                        <li>
-                            If the music is currently on beat, the enemies will move faster.
-                        </li>
-                    <ol>
-                </li>
+                <li>Fill up a grid with random binary noise.</li>
+                <li>If a cell has more than X '1' nighbors, this cell gets converted
+                    to a 1. Otherwise, it dies and becomes a 0.</li>
+                <li>Repeat the previous step until the grid looks cool</li>
+            </ol>
+            There's lots of parameters that we can tweak to change the appearance of
+            the caves. For example, the distribution of 0's and 1's at step (1), 
+            the value of X in step (2), and the number of repetitions in step (3)
+            can all dramatically affect the appearance. Here's a 
+            <a href="https://gist.github.com/gcwhitfield/a2764c0d991156a51d556ba71f06af56">code sample.</a>
+            
+            <br><br>
+            <img src="../images/video-games/lab8/Level2.png" style="width:100%;">
+            <br><br>
+            
+            <h3> Level 3 </h3>
+            Similar to level 1, level 3 features many long hallways and geometric open rooms. 
+            However, the main difference is that level 3's rooms are generated by sampling 
+            from image textures whereas level 1's rooms are generated solely with code. 
+            <br><br>
+            <img src="../images/video-games/lab8/Level3.jpeg" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lab8/ImageRoomExample.png" style="width:100%;">
+            <i>The images on the left were used to generate the environment on the right. 
+               The size of the rooms is randomly generated within a range of valid values, 
+               similar to Level 1.
+            </i>
             </div>
         </div>
     <hr>

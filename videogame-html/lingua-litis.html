@@ -1,0 +1,263 @@
+<!doctype html>
+
+<!-- 
+    George Whitfield
+    gwhitfie@andrew.cmu.edu
+    June 8 2020
+
+    Personal website
+-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5XGHZLF0WR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5XGHZLF0WR');
+</script>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>George Whitfield</title>
+        <meta name="description" content="George Whitfield">
+        <meta name="author" content="George Whitfield">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/styles.css?v=1.0">
+    </head>
+
+    <!-- JQuery code that shows images 
+         Code found on stack overflow. Modified slightly to put images in columns
+         https://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery-->
+
+   <!-- Navigation bar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href = ""><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mx-5">
+                    <a class="nav-link" href="../index.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown mx-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../games.html">Video Games</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mx-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hobbies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../music.html">Music</a>
+                    <a class="dropdown-item" href="../photography.html">Photography</a>
+                    </div>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <body>
+
+    <!-- The Header -->
+    <div class="image-background" style="background-image:url(../images/video-games/lingua-litis/MainMenu.png);">
+      <div class="image-overlay-text">
+        <h1 class="vertical-center"><b>Lingua Litis</b></h1>
+      </div>
+    </div>
+
+    <!-- The Content -->
+    <div class="container">
+    <hr>
+        <!-- background images of portfolio are 45% darker than original image -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 p-5">
+            <i>Spring 2021 - Game Programming (Unity), Project Management</i>
+            <br><br>
+            <h1>Overview</h1>
+            This is my 7th project with <a href="http://www.gamecreation.org">Game Creation Society</a>
+            (GCS) at CMU.
+            <br><br>
+
+            This was a game that I wanted to make for a long time! One of my all-time favorite
+            games from my childhood was <i>Bookworm Adventures</i> created by 
+            PopCap Games. The  premise of Lingua Litis is "Bookworm Adventures, but it's 
+            2 player and there's wizards".
+            <br><br>
+
+            I was the lead programmer as well as the project lead. Most of my work on 
+            this game was organizing weekly meetings, helping the other programmers with Unity, 
+            implementing sounds & UI, and checking in with teammates.
+            <br><br>
+            
+            <h3>Game Programming</h3>
+            Because I was the project lead, most of my programming work  
+            had to do with combining my teammates' work into the main game. I was 
+            the only person on the programming team that had experience with Unity,
+            so I would also help them with the basics such as playing animations and
+            importing artwork.
+            <br><br>
+            
+            Here's an example of a time where I helped one of our programmers use C# and Unity.
+            Around the middle of the semester we needed to add 
+            attack animations to the main gameplay scene. At that time, we didn't have
+            any animations from the art team yet, so I had one of the programmers create a placeholder
+            animation; our goal was for Professor Skull to play a placeholder attack animation
+            when the player casts a spell. I explained to the programmer how to 
+            use Unity's Animation and Animator windows, as well as how to play an 
+            animation from a C# script. After that, they were able to implement the 
+            placeholder animation on their own!
+            <br><br>
+            
+            
+            At the beginning of the semester, I made skeleton code for turn-switching and playing animations
+            inside of <a href="">LevelController.cs.</a>
+            The skeleton code didn't do much - it just printed to the console 
+            indicating whose turn it is. There were also several empty functions such as 
+            <i>OnPlayerDied</i>, <i>Pause</i>/<i>UnPause</i>, and <i>SubmitWord</i> (called 
+            when the player casts a spell). Throughout the semester, the other members of
+            the programming team and I filled in the blanks in the code as needed 
+            whenever we wanted to implement a particular feature. 
+            <br><br>
+            
+            <h3>Project Management</h3>
+            I was surprised to learn how much work goes into running a productive
+            team. At the beginning of the semester, I thought that my time would be 
+            allocated to 80% gameplay programming and 20% project management.
+            However, it turns out that I actually needed to give myself much more time for project management.
+            I had to delegate tasks to everyone on the team, but before I could 
+            do that I oftentimes needed to do some programming myself so that other people
+            on the team could add additional features to it. I resolved merge conflicts that occurred,
+            imported art from the artists, and learned how to use FMOD (because that's the 
+            tool that the sound designers wanted to use). 
+            <br><br>
+            
+            We used Discord to communicate throughout the semester. We had channels 
+            for <i>code</i>, <i>art</i>, <i>sound</i>, <i>game design</i>, and memes :). We also 
+            used Trello for managing our weekly tasks. We had weekly meetings on Sundays, which lasted for about 3 hours. I 
+            organized all of the meetings and sent reminders on Discord the day of each 
+            meeting.
+            <br><br>
+            <h4>Meeting structure</h4>
+            I had to tweak the structure of our meetings a couple times throughout the 
+            semester to encourage more engagement from everyone. At the beginning of the 
+            semester, the meetings were structured like this:
+            <ul>
+                <li>At the beginning of the meeting, we sat in a circle and everyone shared what they will be 
+                    working on for this meeting and what they're working on throughout the week 
+                </li>
+                <li>We all work independently for most of the meeting. If anyone 
+                    needs help then they could talk to their neighbor, or come to me
+                    if it was a Unity question. The art, progamming, and sound teams 
+                    tended to sit next to each other </li>
+            </ul>
+            
+            By the end of the semester, I had tweaked the meeting structure a few times
+            and I had settled on this:
+            <ul>
+                <li>The chairs and tables in the room were arranged in a big circle.</li>
+                <li>At the beginning of each meetings, each team member shared 1) what they worked on 
+                    last week, 2) what they are going to be working on this week, 3) an explanation
+                    of how their work can be enhanced by someone else on the team, and 4) personal 
+                    updates. When it was someone's turn to share, a stuffed animal 
+                    would be thrown to them and they get to hold on to it while they 
+                    spoke. </li>
+                    <li>I would have a zoom call open for anyone who wanted to attend the 
+                        meetings virtually. I had the camera on facing the room because 
+                        I wanted them to feel like they were still engaged in the meeting
+                        even though they're remote.</li>
+                        <li>We all got up and drew on the chalkboards sometimes to come up with art 
+                            and game design ideas together</li>
+                            <li>After sharing our updates and drawing on the chalkboard, we worked
+                                independently for the remainder of the meeting. I think the 
+                                big circular arrangement of the chairs encouraged more discussion
+                                between people with different roles (i.e. programmers talking to artists, 
+                                game designers talking to sound designers, etc.) too. </li>
+            </ul>
+            
+            <h4>Lessons Learned</h4>
+            One of the biggest lessons that I learned as the team lead for Lingua Litis
+            is that I needed to constantly check in with my team members in order for 
+            the game to stay on track. If I don't hear from someone for a few weeks, then they probably aren't 
+            doing any work. Or even worse, they're doing work but it's not what 
+            we needed. It's totally fine if people aren't contributing, because this project 
+            (as well as GCS projects in general) is supposed to be low-stress low-stakes. That being 
+            said, I still needed everyone to let me know what they're doing so that
+            we stay on track for the end of semester deadline. I encouraged everyone to submit updates in the Discord. I also had a "github-updates" channel that had
+            a webhook configured to send updates whenever someone committed to our 
+            project repository.
+            <br><br>
+            
+            Right after midterm exams, I checked in with my teammates one on one.
+            I wanted to see how they were feeling about the progress of the game 
+            and if there was anything they wanted to discuss. There were 10 people 
+            on the team (not including myself), so it's challenging for me to 
+            always know at any given moment what people are working on. The one on one
+            check-ins were very helpful for me because I was able to identify holes on  
+            our development and I made an extra effort over the following weeks to
+            add what we were missing.
+
+
+            <br><br>
+
+            <h2>Screenshots</h2>
+            <br><br>
+            <img src="../images/video-games/lingua-litis/MainMenu.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/OptionsMenu.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/Tutorial.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/Gameplay1.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/Gameplay2.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/Gameplay3.png" style="width:100%;">
+            <br><br>
+            <img src="../images/video-games/lingua-litis/PauseMenu.png" style="width:100%;">
+            </div>
+        </div>
+    <hr>
+    </div>
+
+    </body>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="row p-2">
+            <div class="col-sm footer-content text-center">
+                <a href="https://twitter.com/gcwhitfie" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/georgewhitfieldjr/" class="fa fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+</html>
